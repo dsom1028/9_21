@@ -1,7 +1,17 @@
 <!doctype html>
 <body>
+  <!-- html에서 바로  이벤트를  처리  -->
 <button onclick="a();">날눌러봐</button>
+  
+  <button id="datePrint">날눌러봐</button>
+  
 <script>
+  
+  //자바스크립트에서  바로  이벤트를  처리  
+  datePrint.onclick = function(){
+    a();
+  }
+  
 function a(text){
   console.log(  Math.random()  );
 }
